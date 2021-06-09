@@ -1,7 +1,7 @@
 import { useFetch } from "./hooks/useFetch";
 import { scaleLinear } from "d3-scale";
-import { extent, max, min, bin, range } from "d3-array";
-import React, { useState } from "react";
+import { extent} from "d3-array";
+import React from "react";
 
 
 const App = () => {
