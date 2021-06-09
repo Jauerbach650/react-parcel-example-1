@@ -6,11 +6,10 @@ import React, { useState } from "react";
 
 const App = () => {
     const [data, loading] = useFetch(
-        "https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/Pac12Bball.csv"
+        "https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/cbb21.csv"
     );
 
-    // csv("https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/Pac12Bball.csv")
-    // .then(data => console.log(data));
+    console.log(data);
 
     const ADJOEextent = extent(data, (d) => {
         return +d.ADJOE;
@@ -76,7 +75,7 @@ const App = () => {
     return (
         <div>
             <h1>Assignment 2: Exploratory Data Analysis INFO 474 SP 2021</h1>
-            <h2>Pac 12 2021 NCAA Basketball Data</h2>
+            <h2>2021 NCAA Basketball Data</h2>
             <p>{loading && "Loading data!"}</p>
             <div id='plot1'>
                 <h3>Barcode Plot: Pac 12 Teams</h3>
@@ -105,7 +104,7 @@ const App = () => {
                     x2={size / 4 - tickLength * 2} 
                     y2={margin}
                     stroke={"black"}
-                    stroke-width= {"3"}
+                    strokeWidth= {"3"}
                 />
 
                 <line
@@ -114,11 +113,11 @@ const App = () => {
                     x2={size / 4 - tickLength * 2}
                     y2={size - margin}
                     stroke={"black"} 
-                    stroke-width= {"3"}
+                    strokeWidth= {"3"}
                 />
                 
                 {data.map((measurement, index) => {
-                    const highlight = measurement.TEAM === "Washington"
+                    const highlight = measurement.CONF === "P12"
                     return (
                         <line
                             key={index} 

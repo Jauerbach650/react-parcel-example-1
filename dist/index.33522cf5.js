@@ -21851,9 +21851,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
 const App = ()=>{
     _s();
-    const [data, loading] = _useFetch.useFetch("https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/Pac12Bball.csv");
-    // csv("https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/Pac12Bball.csv")
-    // .then(data => console.log(data));
+    const [data, loading] = _useFetch.useFetch("https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/cbb21.csv");
+    console.log(data);
     const ADJOEextent = _d3Array.extent(data, (d)=>{
         return +d.ADJOE;
     });
@@ -21902,47 +21901,47 @@ const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 77
+            lineNumber: 76
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 78
+            lineNumber: 77
         },
         __self: undefined
     }, "Assignment 2: Exploratory Data Analysis INFO 474 SP 2021"), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 79
+            lineNumber: 78
         },
         __self: undefined
-    }, "Pac 12 2021 NCAA Basketball Data"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "2021 NCAA Basketball Data"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 80
+            lineNumber: 79
         },
         __self: undefined
     }, loading && "Loading data!"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         id: "plot1",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 81
+            lineNumber: 80
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 81
+        },
+        __self: undefined
+    }, "Barcode Plot: Pac 12 Teams"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 82
         },
         __self: undefined
-    }, "Barcode Plot: Average Daily Wind Speed (mph)"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 83
-        },
-        __self: undefined
-    }, "Hover over the plot to see the average daily wind speeds for different weather stations."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+    }), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
         width: size,
         height: size,
         style: {
@@ -21950,7 +21949,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 85
+            lineNumber: 84
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -21963,7 +21962,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 86
+            lineNumber: 85
         },
         __self: undefined
     }, "0"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -21976,7 +21975,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 94
+            lineNumber: 93
         },
         __self: undefined
     }, "100"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -21985,10 +21984,10 @@ const App = ()=>{
         x2: size / 4 - tickLength * 2,
         y2: margin,
         stroke: "black",
-        "stroke-width": "3",
+        strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 102
+            lineNumber: 101
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -21997,14 +21996,14 @@ const App = ()=>{
         x2: size / 4 - tickLength * 2,
         y2: size - margin,
         stroke: "black",
-        "stroke-width": "3",
+        strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 111
+            lineNumber: 110
         },
         __self: undefined
     }), data.map((measurement, index)=>{
-        const highlight = measurement.TEAM === "Washington";
+        const highlight = measurement.CONF === "P12";
         return(/*#__PURE__*/ _reactDefault.default.createElement("line", {
             key: index,
             x1: size / 2,
@@ -22015,77 +22014,65 @@ const App = ()=>{
             strokeOpacity: highlight ? 1 : 0.1,
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 123
+                lineNumber: 122
             },
             __self: undefined
         }));
     }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 139
+            lineNumber: 138
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 140
+            lineNumber: 139
         },
         __self: undefined
     }, "Write-up from Assignment 2"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 140
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 141
-        },
-        __self: undefined
-    }, "I chose to work with the weather dataset, which contains daily U.S. weather measurements from 2017. The data has been pre transformed, in the sense that some weather stations were filtered out if the measurements were too sparse. In this dataset, there are 416,937 rows and 15 different columns. The columns are: station (which is the name of the weather station), state, latitude, longitude, elevation, date, TMIN (minimum temp in F), TMAX (maximum temp in F), TAVG (average temp in F), AWND (average daily wind speed in mph), WDF5 (direction of fastest 5-second wind in degrees), WSF5 (fastest 5-second wind speed in mph), SNOW (snowfall in inches), SNWD (snow depth in inches), and PRCP (precipitation in inches). Immediately, I notice that there are some NaN values in the dataset."), /*#__PURE__*/ _reactDefault.default.createElement("p", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 142
-        },
-        __self: undefined
-    }, "Because this weather dataset had hundreds of thousands of rows, I decided to narrow it down to just Montana. The initial reason I was trying to make my dataset smaller was because it was taking too long to load on the website as I was creating my visuals. But this was also a way to cut down the dataset in a beneficial and meaningful way. I decided to explore 3 questions in this assignment. First, I broadly wanted to explore throughout all of my visualizations how the weather measurements differ in Montana. I next wanted to look at how the weather differs at different airports, specifically the Kalispell Glacier Airport and the Missoula International Airport. These are the two airports I fly into when I visit my grandparents in Montana, and I thought it would be interesting to compare the weather at the two and see if I could draw any conclusions about which airport is more likely to have weather related delays. I chose to look at the daily average wind speed (AWND) and average snowfall (SNOW) because I felt like those 2 factors were likely to impact a plane\u2019s travel. I chose to do two side by side barcode plots. This not only allowed me to compare the two airports to each other, I was also able to compare each individual airport to the rest of the weather stations throughout the state. I thought that was really beneficial and effective for me to draw conclusions. For my final question, I wanted to look at how temperatures differ across the two weather stations in Glacier National Park. I have been there and it is a huge park, and so interesting that the weather can fluctuate so much in different parts of the same park. To do this, I made scatter plots of two of the Glacier National Park weather stations. Similarly to my other visualizations, I chose to use color to separate the weather station I was focusing on from all the other weather stations in Montana. This way, I was able to compare the two stations in Glacier, while also being able to compare them to the rest of the state."), /*#__PURE__*/ _reactDefault.default.createElement("p", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 143
-        },
-        __self: undefined
-    }, "While completing this project, I learned a lot about the process and about the code in general. One of the biggest learning curves was choosing the x and y points. It took me a while to finally understand how to effectively place things. Creating the labels and tick marks was more time consuming because I had to make sure everything lined up well. I also found that it can be helpful to narrow down your dataset if it can provide opportunity for a more focused analysis. I learned that color can be an effective medium to allow for a multi-layer analysis of the same visualization. I also learned that using contrasting colors is important which I tried to do."), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 144
         },
         __self: undefined
     }, "Peer Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 142
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 143
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 144
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 145
-        },
-        __self: undefined
-    }, "Instead of using color in the Barcode plots, shift the highlighted bars over to see them better"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 146
-        },
-        __self: undefined
-    }, "Make graphs bigger"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 147
-        },
-        __self: undefined
-    }, "Change contrast on scatterplot"), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 148
         },
         __self: undefined
     }, "Implemented Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 149
+            lineNumber: 146
         },
         __self: undefined
-    }, "I decided to make all of my graphs bigger. I agreed with my feedback in that it would make the graphs easier to see and read. I had to fix my scaling on everything which was tedious becuase a lot of my labels and tick marks were hard coded in to fit my old scaling. I also noticed I should make some lines thicker to make them easier to see since everything was bigger now. I also changed my contrast of colors on my scatterplot so the highlighted ones could stand out better."))));
+    }))));
 };
 _s(App, "52bsSfiOmo13TAirzFgDobB5jNg=", false, function() {
     return [_useFetch.useFetch];
