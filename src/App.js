@@ -9,8 +9,6 @@ const App = () => {
         "https://raw.githubusercontent.com/Jauerbach650/react-parcel-example-1/main/cbb21.csv"
     );
 
-    console.log(data);
-
     const ADJOEextent = extent(data, (d) => {
         return +d.ADJOE;
     });
@@ -34,7 +32,7 @@ const App = () => {
 
     const yScale = scaleLinear()
         .domain(ADJOEextent)
-        .range([size - margin, size - 50]); //unit: pixels
+        .range([size - margin, size - 450]); //unit: pixels
 
     // const yScaleDefense = scaleLinear()
     // .domain(ADJDEextent)
@@ -68,7 +66,7 @@ const App = () => {
         "-40"
     );
 
-    console.log(yScale);
+    // console.log(yScale);
     // console.log(yScaleDefense);
     // console.log(yScalePower);
 
@@ -87,15 +85,14 @@ const App = () => {
                     textAnchor="end"
                     y={size - margin + axisTextAlignmentFactor} 
                     style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
-                        0
+                        75
                 </text>
-                {/* left 37 */}
                 <text 
                     x={barcodeLength} 
                     textAnchor="end"
                     y={margin + axisTextAlignmentFactor / 2} 
                     style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
-                        100
+                        130
                 </text>
 
                 <line
@@ -117,7 +114,59 @@ const App = () => {
                 />
                 
                 {data.map((measurement, index) => {
-                    const highlight = measurement.CONF === "P12"
+                    const highlight = measurement.CONF === "P12";
+                    console.log(yScale(measurement.ADJOE));
+                    return (
+                        <line
+                            key={index} 
+                            x1={size / 2}
+                            y1={yScale(measurement.ADJOE)}
+                            x2={size / 2 + 20}
+                            y2={yScale(measurement.ADJOE)}
+                            stroke={highlight ? "red" : "steelblue"}
+                            strokeOpacity={highlight ? 1 : 0.1}
+                        />
+                    );
+                })}
+            </svg>
+
+            <svg width={size} height={size} style={{ border: "1px solid black" }}>
+                <text 
+                    x={barcodeLength} 
+                    textAnchor="end"
+                    y={size - margin + axisTextAlignmentFactor} 
+                    style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                        75
+                </text>
+                <text 
+                    x={barcodeLength} 
+                    textAnchor="end"
+                    y={margin + axisTextAlignmentFactor / 2} 
+                    style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                        130
+                </text>
+
+                <line
+                    x1={size / 4 - tickLength} 
+                    y1={margin} 
+                    x2={size / 4 - tickLength * 2} 
+                    y2={margin}
+                    stroke={"black"}
+                    strokeWidth= {"3"}
+                />
+
+                <line
+                    x1={size / 4 - tickLength}
+                    y1={size - margin}
+                    x2={size / 4 - tickLength * 2}
+                    y2={size - margin}
+                    stroke={"black"} 
+                    strokeWidth= {"3"}
+                />
+                
+                {data.map((measurement, index) => {
+                    const highlight = measurement.CONF === "SEC";
+                    console.log(yScale(measurement.ADJOE));
                     return (
                         <line
                             key={index} 
