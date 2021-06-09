@@ -5,15 +5,16 @@
   "main": "dist/index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url https://dma150.github.io/react-parcel-example-1/; rm -rf docs; mv dist docs;",
+    "build": "parcel build index.html --public-url https://jauerbach650.github.io/react-parcel-example-1/; rm -rf docs; mv dist docs;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Darren Ma",
+  "author": "Jordan Auerbach",
   "license": "ISC",
   "dependencies": {
     "csv": "^5.5.0",
     "d3-fetch": "^3.0.1",
     "d3-scale": "^4.0.0",
+    "gh-pages": "^3.2.0",
     "parcel": "^2.0.0-beta.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
