@@ -22276,19 +22276,19 @@ const App = ()=>{
             lineNumber: 262
         },
         __self: undefined
-    }, "Scatterplot: Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "Scatterplot: Pac 12 and SEC Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 263
         },
         __self: undefined
-    }, "Through these next 4 plots, I wanted to see if there was a correlation between Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }, "Through these next 4 plots, I wanted to see if there was a correlation between Adjusted Defensive Efficiency and Adjusted Offensive Efficiency.", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 263
         },
         __self: undefined
-    }), "On the left we have data from the Pac 12 and on the right we have data from the SEC. It's hard to see a true correlation between these data point for each division, but it appears that there is a positive correlation. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }), "On the left we have data from the Pac 12 and on the right we have data from the SEC. It's hard to see a true correlation between these data point for each division, but it appears that there is a positive correlation for both divisions. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 265
@@ -22461,19 +22461,19 @@ const App = ()=>{
             lineNumber: 366
         },
         __self: undefined
-    }, "Scatterplot: Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "Scatterplot: ACC and Big 12 Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 367
         },
         __self: undefined
-    }, "For this scatterplot, the WCC is on the left and the Big 10 is on the right. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }, "For this scatterplot, the ACC is on the left and the Big 12 is on the right. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 367
         },
         __self: undefined
-    }), "After looking at this, it appears that the WCC has a positive correlation between Adjusted Defensive Efficiency and Adjusted Offensive Efficiency, while there doesn't seem to be any correlation at all for the Big 10."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+    }), "After looking at this, it appears that the ACC has a positive correlation between Adjusted Defensive Efficiency and Adjusted Offensive Efficiency, while there doesn't seem to be any correlation at all for the Big 12."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
         width: size,
         height: size,
         style: {
@@ -22535,7 +22535,7 @@ const App = ()=>{
         },
         __self: undefined
     }, "ADJDE"), data.map((measurement, index)=>{
-        const highlight = measurement.CONF === "WCC";
+        const highlight = measurement.CONF === "ACC";
         return(/*#__PURE__*/ _reactDefault.default.createElement("circle", {
             key: index,
             cx: 300 - measurement.ADJOE,
@@ -22612,7 +22612,7 @@ const App = ()=>{
         },
         __self: undefined
     }, "ADJDE"), data.map((measurement, index)=>{
-        const highlight = measurement.CONF === "B10";
+        const highlight = measurement.CONF === "B12";
         return(/*#__PURE__*/ _reactDefault.default.createElement("circle", {
             key: index,
             cx: 300 - measurement.ADJOE,
@@ -22663,7 +22663,7 @@ const App = ()=>{
             lineNumber: 473
         },
         __self: undefined
-    }), "Is there a correlation between Adjusted Offensive Efficiency and Adjusted Defensive Efficiency for the teams in these same divisions?Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }), "Is there a correlation between Adjusted Offensive Efficiency and Adjusted Defensive Efficiency for the teams in these same divisions?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 474
@@ -22675,7 +22675,7 @@ const App = ()=>{
             lineNumber: 476
         },
         __self: undefined
-    }, "To answer these questions, I thought it was appropriate to use a barcode plot for the first 2 questions and a scatterplot to answer the last question.Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }, "To answer these questions, I thought it was appropriate to use a barcode plot for the first 2 questions and a scatterplot to answer the last question.", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 476
@@ -22687,7 +22687,7 @@ const App = ()=>{
             lineNumber: 477
         },
         __self: undefined
-    }), "Furthermore, I utilized d3 to highlight the division I was analysing in order to make this part easier and more noticeable to the viewers."), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }), "Furthermore, I utilized d3 to highlight the division I was analyzing in order to make this part easier and more noticeable to the viewers."), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 480
@@ -22699,7 +22699,7 @@ const App = ()=>{
             lineNumber: 482
         },
         __self: undefined
-    }), "Also, I learned the importance of scaling your y values and how important and useful this can be. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }), "Also, I learned the importance of scaling your y values and how useful this can be. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 483
@@ -22741,7 +22741,7 @@ const App = ()=>{
             lineNumber: 491
         },
         __self: undefined
-    }, "After receiving this feedback, I changed everything according. I increased the length of the barcodes for easier viewing. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+    }, "After receiving this feedback, I changed everything accordingly. I increased the length of the barcodes for easier viewing. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 491

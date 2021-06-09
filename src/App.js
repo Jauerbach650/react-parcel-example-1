@@ -259,10 +259,10 @@ const App = () => {
             </div>
 
             <div id='plots56'>
-                <h3>Scatterplot: Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency</h3>
-                <p>Through these next 4 plots, I wanted to see if there was a correlation between Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency<br></br>
+                <h3>Scatterplot: Pac 12 and SEC Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency</h3>
+                <p>Through these next 4 plots, I wanted to see if there was a correlation between Adjusted Defensive Efficiency and Adjusted Offensive Efficiency.<br></br>
                 On the left we have data from the Pac 12 and on the right we have data from the SEC. It's hard to see a true correlation between
-                these data point for each division, but it appears that there is a positive correlation. <br></br>
+                these data point for each division, but it appears that there is a positive correlation for both divisions. <br></br>
                 When Adjusted Defensive Efficiency goes up, so does the Adjusted Offensive Efficiency for a team, and vice versa.
                 </p>
 
@@ -363,10 +363,10 @@ const App = () => {
             </div>
 
             <div id='plots78'>
-                <h3>Scatterplot: Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency</h3>
-                <p>For this scatterplot, the WCC is on the left and the Big 10 is on the right. <br></br>
-                After looking at this, it appears that the WCC has a positive correlation between Adjusted Defensive Efficiency
-                and Adjusted Offensive Efficiency, while there doesn't seem to be any correlation at all for the Big 10.
+                <h3>Scatterplot: ACC and Big 12 Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency</h3>
+                <p>For this scatterplot, the ACC is on the left and the Big 12 is on the right. <br></br>
+                After looking at this, it appears that the ACC has a positive correlation between Adjusted Defensive Efficiency
+                and Adjusted Offensive Efficiency, while there doesn't seem to be any correlation at all for the Big 12.
                 </p>
 
                 <svg width={size} height={size} style={{ border: "1px solid black" }}>
@@ -401,7 +401,7 @@ const App = () => {
                     </text>
 
                     {data.map((measurement, index) => {
-                        const highlight = measurement.CONF === "WCC"
+                        const highlight = measurement.CONF === "ACC"
                         return (
                             <circle 
                                 key={index} 
@@ -448,7 +448,7 @@ const App = () => {
                     </text>
 
                     {data.map((measurement, index) => {
-                        const highlight = measurement.CONF === "B10"
+                        const highlight = measurement.CONF === "B12"
                         return (
                             <circle 
                                 key={index} 
@@ -471,16 +471,16 @@ const App = () => {
                 <p>For this assignment, I came up with these 3 questions: <br></br>
                 Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?<br></br>
                 Who has a higher Adjusted Defensive Efficiency between the Big 12 and the ACC?<br></br>
-                Is there a correlation between Adjusted Offensive Efficiency and Adjusted Defensive Efficiency for the teams in these same divisions?Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?<br></br>
+                Is there a correlation between Adjusted Offensive Efficiency and Adjusted Defensive Efficiency for the teams in these same divisions?<br></br>
                 </p>
-                <p>To answer these questions, I thought it was appropriate to use a barcode plot for the first 2 questions and a scatterplot to answer the last question.Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?<br></br>
+                <p>To answer these questions, I thought it was appropriate to use a barcode plot for the first 2 questions and a scatterplot to answer the last question.<br></br>
                 In terms of the data, I didn't have to clean it as it wasn't too big of a dataset and it had everything I needed. <br></br>
-                Furthermore, I utilized d3 to highlight the division I was analysing in order to make this part easier and more noticeable to the viewers.
+                Furthermore, I utilized d3 to highlight the division I was analyzing in order to make this part easier and more noticeable to the viewers.
                 </p>
                 <p>
                     Through this project, I learned a lot about d3 and visualizations. First, I learned the importance of highlighting certain data points
                     in your plots to allow for easier viewing for both you and your audience. <br></br>
-                    Also, I learned the importance of scaling your y values and how important and useful this can be. <br></br>
+                    Also, I learned the importance of scaling your y values and how useful this can be. <br></br>
                     Lastly, I learned how useful data visualizations are as a whole and how they can help you and others easily answer important questions.
                 </p>
                 <h2>Peer Feedback</h2>
@@ -488,7 +488,7 @@ const App = () => {
                 <li>Increase the barcode size in the first 4 plots</li>
                 <li>Add labels to the x and y axes in your scatterplots.</li>
                 <h2>Implemented Feedback</h2>
-                <p>After receiving this feedback, I changed everything according. I increased the length of the barcodes for easier viewing. <br></br>
+                <p>After receiving this feedback, I changed everything accordingly. I increased the length of the barcodes for easier viewing. <br></br>
                 I took out all of the other teams in the scatterplots, except for the ones I was observing. Lastly, I added labels to the x and y axes of the scatterplots.
                 </p>
             </div>
