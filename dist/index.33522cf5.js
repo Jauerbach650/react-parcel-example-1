@@ -21908,13 +21908,25 @@ const App = ()=>{
             lineNumber: 40
         },
         __self: undefined
-    }, "Barcode Plot: Pac 12 Adjusted Offensive Efficiency vs SEC Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+    }, "Barcode Plot: Pac 12 Adjusted Offensive Efficiency vs SEC Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 41
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+    }, " In this plot, I wanted to see who had the higher Adjusted Offensive Efficiency between the Pac 12 and the SEC.", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 41
+        },
+        __self: undefined
+    }), "On the left, I have highlighted the Adjusted Offensive Efficiency for the Pac 12 and highlighted this for the SEC on the right. Looking at this, we can see that ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 43
+        },
+        __self: undefined
+    }), " they are pretty similar, however, the Pac 12 has more higher scores while the SEC has the overall single highest."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
         width: size,
         height: size,
         style: {
@@ -21922,7 +21934,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 43
+            lineNumber: 47
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -21935,7 +21947,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 44
+            lineNumber: 48
         },
         __self: undefined
     }, "75"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -21948,7 +21960,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 51
+            lineNumber: 55
         },
         __self: undefined
     }, "130"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -21960,7 +21972,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 59
+            lineNumber: 63
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -21972,7 +21984,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 68
+            lineNumber: 72
         },
         __self: undefined
     }), data.map((d, index)=>{
@@ -21988,7 +22000,7 @@ const App = ()=>{
             strokeOpacity: highlight ? 1 : 0.1,
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 81
+                lineNumber: 85
             },
             __self: undefined
         }));
@@ -22000,7 +22012,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 94
+            lineNumber: 98
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22013,7 +22025,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 95
+            lineNumber: 99
         },
         __self: undefined
     }, "75"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22026,7 +22038,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 102
+            lineNumber: 106
         },
         __self: undefined
     }, "130"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22038,7 +22050,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 110
+            lineNumber: 114
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22050,7 +22062,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 119
+            lineNumber: 123
         },
         __self: undefined
     }), data.map((measurement, index)=>{
@@ -22066,7 +22078,7 @@ const App = ()=>{
             strokeOpacity: highlight ? 1 : 0.1,
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 132
+                lineNumber: 136
             },
             __self: undefined
         }));
@@ -22074,22 +22086,28 @@ const App = ()=>{
         id: "plots34",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 147
+            lineNumber: 151
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 148
+            lineNumber: 152
         },
         __self: undefined
-    }, "Barcode Plot: Big 12 Adjusted Defensive Efficiency vs ACC Adjusted Defensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+    }, "Barcode Plot: Big 12 Adjusted Defensive Efficiency vs ACC Adjusted Defensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 149
+            lineNumber: 153
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+    }, "Through this plot, I wanted to see who had the higher Adjusted Defensive Efficiency between the Big 12 and the ACC.", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 153
+        },
+        __self: undefined
+    }), "With the Big 12 on the left and the ACC on the right, it appears that the ACC has more higher scores than the Big 12."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
         width: size,
         height: size,
         style: {
@@ -22097,7 +22115,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 151
+            lineNumber: 157
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22110,7 +22128,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 152
+            lineNumber: 158
         },
         __self: undefined
     }, "75"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22123,7 +22141,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 159
+            lineNumber: 165
         },
         __self: undefined
     }, "130"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22135,7 +22153,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 167
+            lineNumber: 173
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22147,7 +22165,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 176
+            lineNumber: 182
         },
         __self: undefined
     }), data.map((measurement, index)=>{
@@ -22163,7 +22181,7 @@ const App = ()=>{
             strokeOpacity: highlight ? 1 : 0.1,
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 189
+                lineNumber: 195
             },
             __self: undefined
         }));
@@ -22175,7 +22193,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 202
+            lineNumber: 208
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22188,7 +22206,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 203
+            lineNumber: 209
         },
         __self: undefined
     }, "75"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22201,7 +22219,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 210
+            lineNumber: 216
         },
         __self: undefined
     }, "130"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22213,7 +22231,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 218
+            lineNumber: 224
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22225,7 +22243,7 @@ const App = ()=>{
         strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 227
+            lineNumber: 233
         },
         __self: undefined
     }), data.map((measurement, index)=>{
@@ -22241,7 +22259,7 @@ const App = ()=>{
             strokeOpacity: highlight ? 1 : 0.1,
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 240
+                lineNumber: 246
             },
             __self: undefined
         }));
@@ -22249,22 +22267,34 @@ const App = ()=>{
         id: "plots56",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 255
+            lineNumber: 261
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 256
+            lineNumber: 262
         },
         __self: undefined
-    }, "Scatterplot: Adjusted Defensive Efficiency vs Adjusted Defensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+    }, "Scatterplot: Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 257
+            lineNumber: 263
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+    }, "Through these next 4 plots, I wanted to see if there was a correlation between Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 263
+        },
+        __self: undefined
+    }), "On the left we have data from the Pac 12 and on the right we have data from the SEC. It's hard to see a true correlation between these data point for each division, but it appears that there is a positive correlation. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 265
+        },
+        __self: undefined
+    }), "When Adjusted Defensive Efficiency goes up, so does the Adjusted Offensive Efficiency for a team, and vice versa."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
         width: size,
         height: size,
         style: {
@@ -22272,7 +22302,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 259
+            lineNumber: 269
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22284,7 +22314,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 261
+            lineNumber: 271
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22296,7 +22326,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 268
+            lineNumber: 278
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22309,7 +22339,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 275
+            lineNumber: 285
         },
         __self: undefined
     }, "ADJOE"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22322,7 +22352,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 282
+            lineNumber: 292
         },
         __self: undefined
     }, "ADJDE"), data.map((measurement, index)=>{
@@ -22333,11 +22363,11 @@ const App = ()=>{
             cy: size - margin - measurement.ADJDE,
             r: "3",
             fill: "none",
-            stroke: highlight ? "red" : "steelblue",
-            strokeOpacity: ".2",
+            stroke: "red",
+            strokeOpacity: highlight ? "0.2" : "0",
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 293
+                lineNumber: 303
             },
             __self: undefined
         }));
@@ -22349,7 +22379,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 306
+            lineNumber: 316
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22361,7 +22391,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 308
+            lineNumber: 318
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22373,7 +22403,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 315
+            lineNumber: 325
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22386,7 +22416,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 322
+            lineNumber: 332
         },
         __self: undefined
     }, "ADJOE"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22399,7 +22429,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 329
+            lineNumber: 339
         },
         __self: undefined
     }, "ADJDE"), data.map((measurement, index)=>{
@@ -22410,11 +22440,11 @@ const App = ()=>{
             cy: size - margin - measurement.ADJDE,
             r: "3",
             fill: "none",
-            stroke: highlight ? "red" : "steelblue",
-            strokeOpacity: ".2",
+            stroke: "red",
+            strokeOpacity: highlight ? "0.2" : "0",
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 340
+                lineNumber: 350
             },
             __self: undefined
         }));
@@ -22422,22 +22452,28 @@ const App = ()=>{
         id: "plots78",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 355
+            lineNumber: 365
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 356
+            lineNumber: 366
         },
         __self: undefined
-    }, "Scatterplot: Adjusted Defensive Efficiency vs Adjusted Defensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+    }, "Scatterplot: Adjusted Defensive Efficiency vs Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 357
+            lineNumber: 367
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+    }, "For this scatterplot, the WCC is on the left and the Big 10 is on the right. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 367
+        },
+        __self: undefined
+    }), "After looking at this, it appears that the WCC has a positive correlation between Adjusted Defensive Efficiency and Adjusted Offensive Efficiency, while there doesn't seem to be any correlation at all for the Big 10."), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
         width: size,
         height: size,
         style: {
@@ -22445,7 +22481,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 359
+            lineNumber: 372
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22457,7 +22493,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 361
+            lineNumber: 374
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22469,7 +22505,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 368
+            lineNumber: 381
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22482,7 +22518,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 375
+            lineNumber: 388
         },
         __self: undefined
     }, "ADJOE"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22495,22 +22531,22 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 382
+            lineNumber: 395
         },
         __self: undefined
     }, "ADJDE"), data.map((measurement, index)=>{
-        const highlight = measurement.CONF === "P12";
+        const highlight = measurement.CONF === "WCC";
         return(/*#__PURE__*/ _reactDefault.default.createElement("circle", {
             key: index,
             cx: 300 - measurement.ADJOE,
             cy: size - margin - measurement.ADJDE,
             r: "3",
             fill: "none",
-            stroke: highlight ? "red" : "steelblue",
-            strokeOpacity: ".2",
+            stroke: "red",
+            strokeOpacity: highlight ? "0.2" : "0",
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 393
+                lineNumber: 406
             },
             __self: undefined
         }));
@@ -22522,7 +22558,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 406
+            lineNumber: 419
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22534,7 +22570,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 408
+            lineNumber: 421
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
@@ -22546,7 +22582,7 @@ const App = ()=>{
         "stroke-width": "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 415
+            lineNumber: 428
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22559,7 +22595,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 422
+            lineNumber: 435
         },
         __self: undefined
     }, "ADJOE"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
@@ -22572,7 +22608,7 @@ const App = ()=>{
         },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 429
+            lineNumber: 442
         },
         __self: undefined
     }, "ADJDE"), data.map((measurement, index)=>{
@@ -22583,69 +22619,135 @@ const App = ()=>{
             cy: size - margin - measurement.ADJDE,
             r: "3",
             fill: "none",
-            stroke: highlight ? "red" : "steelblue",
-            strokeOpacity: ".2",
+            stroke: "red",
+            strokeOpacity: highlight ? "0.2" : "0",
             __source: {
                 fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-                lineNumber: 440
+                lineNumber: 453
             },
             __self: undefined
         }));
     }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 456
+            lineNumber: 469
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 457
+            lineNumber: 470
         },
         __self: undefined
     }, "Write-up from Assignment 2"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 458
+            lineNumber: 471
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+    }, "For this assignment, I came up with these 3 questions: ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 459
+            lineNumber: 471
+        },
+        __self: undefined
+    }), "Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 472
+        },
+        __self: undefined
+    }), "Who has a higher Adjusted Defensive Efficiency between the Big 12 and the ACC?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 473
+        },
+        __self: undefined
+    }), "Is there a correlation between Adjusted Offensive Efficiency and Adjusted Defensive Efficiency for the teams in these same divisions?Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 474
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 476
+        },
+        __self: undefined
+    }, "To answer these questions, I thought it was appropriate to use a barcode plot for the first 2 questions and a scatterplot to answer the last question.Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 476
+        },
+        __self: undefined
+    }), "In terms of the data, I didn't have to clean it as it wasn't too big of a dataset and it had everything I needed. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 477
+        },
+        __self: undefined
+    }), "Furthermore, I utilized d3 to highlight the division I was analysing in order to make this part easier and more noticeable to the viewers."), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 480
+        },
+        __self: undefined
+    }, "Through this project, I learned a lot about d3 and visualizations. First, I learned the importance of highlighting certain data points in your plots to allow for easier viewing for both you and your audience. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 482
+        },
+        __self: undefined
+    }), "Also, I learned the importance of scaling your y values and how important and useful this can be. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 483
+        },
+        __self: undefined
+    }), "Lastly, I learned how useful data visualizations are as a whole and how they can help you and others easily answer important questions."), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 486
         },
         __self: undefined
     }, "Peer Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 460
+            lineNumber: 487
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+    }, "Just show the divisions you are looking at in the scatterplots, there is too much going on"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 461
+            lineNumber: 488
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+    }, "Increase the barcode size in the first 4 plots"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 462
+            lineNumber: 489
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+    }, "Add labels to the x and y axes in your scatterplots."), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 463
+            lineNumber: 490
         },
         __self: undefined
     }, "Implemented Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 464
+            lineNumber: 491
         },
         __self: undefined
-    }))));
+    }, "After receiving this feedback, I changed everything according. I increased the length of the barcodes for easier viewing. ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 491
+        },
+        __self: undefined
+    }), "I took out all of the other teams in the scatterplots, except for the ones I was observing. Lastly, I added labels to the x and y axes of the scatterplots."))));
 };
 _s(App, "Jm65JCcgUFoenM4DufkEA80vRVI=", false, function() {
     return [_useFetch.useFetch];
