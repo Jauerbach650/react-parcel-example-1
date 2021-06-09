@@ -21877,9 +21877,10 @@ const App = ()=>{
         size - margin,
         size - 450
     ]); //unit: pixels
-    // const yScaleDefense = scaleLinear()
-    // .domain(ADJDEextent)
-    // .range([size - margin, margin]); //unit: pixels
+    const yScaleDefense = _d3Scale.scaleLinear().domain(ADJDEextent).range([
+        size - margin,
+        margin
+    ]); //unit: pixels
     // const yScalePower = scaleLinear()
     // .domain(BARTHAGextent)
     // .range([size - margin, margin]); //unit: pixels
@@ -21934,7 +21935,7 @@ const App = ()=>{
             lineNumber: 79
         },
         __self: undefined
-    }, "Barcode Plot: Pac 12 Teams"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+    }, "Barcode Plot: Pac 12 Adjusted Offensive Efficiency vs SEC Adjusted Offensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 80
@@ -22008,7 +22009,7 @@ const App = ()=>{
             key: index,
             x1: size / 2,
             y1: yScale(measurement.ADJOE),
-            x2: size / 2 + 20,
+            x2: size / 2 + 80,
             y2: yScale(measurement.ADJOE),
             stroke: highlight ? "red" : "steelblue",
             strokeOpacity: highlight ? 1 : 0.1,
@@ -22086,7 +22087,7 @@ const App = ()=>{
             key: index,
             x1: size / 2,
             y1: yScale(measurement.ADJOE),
-            x2: size / 2 + 20,
+            x2: size / 2 + 80,
             y2: yScale(measurement.ADJOE),
             stroke: highlight ? "red" : "steelblue",
             strokeOpacity: highlight ? 1 : 0.1,
@@ -22097,57 +22098,232 @@ const App = ()=>{
             __self: undefined
         }));
     }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        id: "plot2",
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 187
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+    }, "Barcode Plot: Big 12 Adjusted Defensive Efficiency vs ACC Adjusted Defensive Efficiency"), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 188
         },
         __self: undefined
-    }, "Write-up from Assignment 2"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
-        __source: {
-            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 189
+    }), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+        width: size,
+        height: size,
+        style: {
+            border: "1px solid black"
         },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 190
         },
         __self: undefined
-    }, "Peer Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
+        x: barcodeLength,
+        textAnchor: "end",
+        y: size - margin + axisTextAlignmentFactor,
+        style: {
+            fontSize: 15,
+            fontFamily: "Gill Sans, sans serif"
+        },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 191
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+    }, "75"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
+        x: barcodeLength,
+        textAnchor: "end",
+        y: margin + axisTextAlignmentFactor / 2,
+        style: {
+            fontSize: 15,
+            fontFamily: "Gill Sans, sans serif"
+        },
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 192
+            lineNumber: 198
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+    }, "130"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
+        x1: size / 4 - tickLength,
+        y1: margin,
+        x2: size / 4 - tickLength * 2,
+        y2: margin,
+        stroke: "black",
+        strokeWidth: "3",
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 193
+            lineNumber: 206
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
+        x1: size / 4 - tickLength,
+        y1: size - margin,
+        x2: size / 4 - tickLength * 2,
+        y2: size - margin,
+        stroke: "black",
+        strokeWidth: "3",
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 215
+        },
+        __self: undefined
+    }), data.map((measurement, index)=>{
+        const highlight = measurement.CONF === "B12";
+        console.log(yScaleDefense(measurement.ADJDE));
+        return(/*#__PURE__*/ _reactDefault.default.createElement("line", {
+            key: index,
+            x1: size / 2,
+            y1: yScaleDefense(measurement.ADJDE),
+            x2: size / 2 + 80,
+            y2: yScaleDefense(measurement.ADJDE),
+            stroke: highlight ? "red" : "steelblue",
+            strokeOpacity: highlight ? 1 : 0.1,
+            __source: {
+                fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+                lineNumber: 228
+            },
+            __self: undefined
+        }));
+    })), /*#__PURE__*/ _reactDefault.default.createElement("svg", {
+        width: size,
+        height: size,
+        style: {
+            border: "1px solid black"
+        },
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 241
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("text", {
+        x: barcodeLength,
+        textAnchor: "end",
+        y: size - margin + axisTextAlignmentFactor,
+        style: {
+            fontSize: 15,
+            fontFamily: "Gill Sans, sans serif"
+        },
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 242
+        },
+        __self: undefined
+    }, "75"), /*#__PURE__*/ _reactDefault.default.createElement("text", {
+        x: barcodeLength,
+        textAnchor: "end",
+        y: margin + axisTextAlignmentFactor / 2,
+        style: {
+            fontSize: 15,
+            fontFamily: "Gill Sans, sans serif"
+        },
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 249
+        },
+        __self: undefined
+    }, "130"), /*#__PURE__*/ _reactDefault.default.createElement("line", {
+        x1: size / 4 - tickLength,
+        y1: margin,
+        x2: size / 4 - tickLength * 2,
+        y2: margin,
+        stroke: "black",
+        strokeWidth: "3",
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 257
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("line", {
+        x1: size / 4 - tickLength,
+        y1: size - margin,
+        x2: size / 4 - tickLength * 2,
+        y2: size - margin,
+        stroke: "black",
+        strokeWidth: "3",
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 266
+        },
+        __self: undefined
+    }), data.map((measurement, index)=>{
+        const highlight = measurement.CONF === "ACC";
+        console.log(yScaleDefense(measurement.ADJDE));
+        return(/*#__PURE__*/ _reactDefault.default.createElement("line", {
+            key: index,
+            x1: size / 2,
+            y1: yScaleDefense(measurement.ADJDE),
+            x2: size / 2 + 80,
+            y2: yScaleDefense(measurement.ADJDE),
+            stroke: highlight ? "red" : "steelblue",
+            strokeOpacity: highlight ? 1 : 0.1,
+            __source: {
+                fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+                lineNumber: 279
+            },
+            __self: undefined
+        }));
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 295
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 296
+        },
+        __self: undefined
+    }, "Write-up from Assignment 2"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 297
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 194
+            lineNumber: 298
+        },
+        __self: undefined
+    }, "Peer Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 299
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 300
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 301
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
+            lineNumber: 302
         },
         __self: undefined
     }, "Implemented Feedback"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
-            lineNumber: 195
+            lineNumber: 303
         },
         __self: undefined
     }))));

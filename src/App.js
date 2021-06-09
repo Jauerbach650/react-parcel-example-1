@@ -34,9 +34,9 @@ const App = () => {
         .domain(ADJOEextent)
         .range([size - margin, size - 450]); //unit: pixels
 
-    // const yScaleDefense = scaleLinear()
-    // .domain(ADJDEextent)
-    // .range([size - margin, margin]); //unit: pixels
+    const yScaleDefense = scaleLinear()
+    .domain(ADJDEextent)
+    .range([size - margin, margin]); //unit: pixels
 
     // const yScalePower = scaleLinear()
     // .domain(BARTHAGextent)
@@ -76,110 +76,218 @@ const App = () => {
             <h2>2021 NCAA Basketball Data</h2>
             <p>{loading && "Loading data!"}</p>
             <div id='plot1'>
-                <h3>Barcode Plot: Pac 12 Teams</h3>
+                <h3>Barcode Plot: Pac 12 Adjusted Offensive Efficiency vs SEC Adjusted Offensive Efficiency</h3>
                 <h4></h4>
 
-            <svg width={size} height={size} style={{ border: "1px solid black" }}>
-                <text 
-                    x={barcodeLength} 
-                    textAnchor="end"
-                    y={size - margin + axisTextAlignmentFactor} 
-                    style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
-                        75
-                </text>
-                <text 
-                    x={barcodeLength} 
-                    textAnchor="end"
-                    y={margin + axisTextAlignmentFactor / 2} 
-                    style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
-                        130
-                </text>
+                <svg width={size} height={size} style={{ border: "1px solid black" }}>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={size - margin + axisTextAlignmentFactor} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            75
+                    </text>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={margin + axisTextAlignmentFactor / 2} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            130
+                    </text>
 
-                <line
-                    x1={size / 4 - tickLength} 
-                    y1={margin} 
-                    x2={size / 4 - tickLength * 2} 
-                    y2={margin}
-                    stroke={"black"}
-                    strokeWidth= {"3"}
-                />
+                    <line
+                        x1={size / 4 - tickLength} 
+                        y1={margin} 
+                        x2={size / 4 - tickLength * 2} 
+                        y2={margin}
+                        stroke={"black"}
+                        strokeWidth= {"3"}
+                    />
 
-                <line
-                    x1={size / 4 - tickLength}
-                    y1={size - margin}
-                    x2={size / 4 - tickLength * 2}
-                    y2={size - margin}
-                    stroke={"black"} 
-                    strokeWidth= {"3"}
-                />
-                
-                {data.map((measurement, index) => {
-                    const highlight = measurement.CONF === "P12";
-                    console.log(yScale(measurement.ADJOE));
-                    return (
-                        <line
-                            key={index} 
-                            x1={size / 2}
-                            y1={yScale(measurement.ADJOE)}
-                            x2={size / 2 + 20}
-                            y2={yScale(measurement.ADJOE)}
-                            stroke={highlight ? "red" : "steelblue"}
-                            strokeOpacity={highlight ? 1 : 0.1}
-                        />
-                    );
-                })}
-            </svg>
+                    <line
+                        x1={size / 4 - tickLength}
+                        y1={size - margin}
+                        x2={size / 4 - tickLength * 2}
+                        y2={size - margin}
+                        stroke={"black"} 
+                        strokeWidth= {"3"}
+                    />
+                    
+                    {data.map((measurement, index) => {
+                        const highlight = measurement.CONF === "P12";
+                        console.log(yScale(measurement.ADJOE));
+                        return (
+                            <line
+                                key={index} 
+                                x1={size / 2}
+                                y1={yScale(measurement.ADJOE)}
+                                x2={size / 2 + 80}
+                                y2={yScale(measurement.ADJOE)}
+                                stroke={highlight ? "red" : "steelblue"}
+                                strokeOpacity={highlight ? 1 : 0.1}
+                            />
+                        );
+                    })}
+                </svg>
 
-            <svg width={size} height={size} style={{ border: "1px solid black" }}>
-                <text 
-                    x={barcodeLength} 
-                    textAnchor="end"
-                    y={size - margin + axisTextAlignmentFactor} 
-                    style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
-                        75
-                </text>
-                <text 
-                    x={barcodeLength} 
-                    textAnchor="end"
-                    y={margin + axisTextAlignmentFactor / 2} 
-                    style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
-                        130
-                </text>
+                <svg width={size} height={size} style={{ border: "1px solid black" }}>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={size - margin + axisTextAlignmentFactor} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            75
+                    </text>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={margin + axisTextAlignmentFactor / 2} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            130
+                    </text>
 
-                <line
-                    x1={size / 4 - tickLength} 
-                    y1={margin} 
-                    x2={size / 4 - tickLength * 2} 
-                    y2={margin}
-                    stroke={"black"}
-                    strokeWidth= {"3"}
-                />
+                    <line
+                        x1={size / 4 - tickLength} 
+                        y1={margin} 
+                        x2={size / 4 - tickLength * 2} 
+                        y2={margin}
+                        stroke={"black"}
+                        strokeWidth= {"3"}
+                    />
 
-                <line
-                    x1={size / 4 - tickLength}
-                    y1={size - margin}
-                    x2={size / 4 - tickLength * 2}
-                    y2={size - margin}
-                    stroke={"black"} 
-                    strokeWidth= {"3"}
-                />
-                
-                {data.map((measurement, index) => {
-                    const highlight = measurement.CONF === "SEC";
-                    console.log(yScale(measurement.ADJOE));
-                    return (
-                        <line
-                            key={index} 
-                            x1={size / 2}
-                            y1={yScale(measurement.ADJOE)}
-                            x2={size / 2 + 20}
-                            y2={yScale(measurement.ADJOE)}
-                            stroke={highlight ? "red" : "steelblue"}
-                            strokeOpacity={highlight ? 1 : 0.1}
-                        />
-                    );
-                })}
-            </svg>
+                    <line
+                        x1={size / 4 - tickLength}
+                        y1={size - margin}
+                        x2={size / 4 - tickLength * 2}
+                        y2={size - margin}
+                        stroke={"black"} 
+                        strokeWidth= {"3"}
+                    />
+                    
+                    {data.map((measurement, index) => {
+                        const highlight = measurement.CONF === "SEC";
+                        console.log(yScale(measurement.ADJOE));
+                        return (
+                            <line
+                                key={index} 
+                                x1={size / 2}
+                                y1={yScale(measurement.ADJOE)}
+                                x2={size / 2 + 80}
+                                y2={yScale(measurement.ADJOE)}
+                                stroke={highlight ? "red" : "steelblue"}
+                                strokeOpacity={highlight ? 1 : 0.1}
+                            />
+                        );
+                    })}
+                </svg>
+
+            </div>
+
+            <div id='plot2'>
+                <h3>Barcode Plot: Big 12 Adjusted Defensive Efficiency vs ACC Adjusted Defensive Efficiency</h3>
+                <h4></h4>
+
+                <svg width={size} height={size} style={{ border: "1px solid black" }}>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={size - margin + axisTextAlignmentFactor} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            75
+                    </text>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={margin + axisTextAlignmentFactor / 2} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            130
+                    </text>
+
+                    <line
+                        x1={size / 4 - tickLength} 
+                        y1={margin} 
+                        x2={size / 4 - tickLength * 2} 
+                        y2={margin}
+                        stroke={"black"}
+                        strokeWidth= {"3"}
+                    />
+
+                    <line
+                        x1={size / 4 - tickLength}
+                        y1={size - margin}
+                        x2={size / 4 - tickLength * 2}
+                        y2={size - margin}
+                        stroke={"black"} 
+                        strokeWidth= {"3"}
+                    />
+                    
+                    {data.map((measurement, index) => {
+                        const highlight = measurement.CONF === "B12";
+                        console.log(yScaleDefense(measurement.ADJDE));
+                        return (
+                            <line
+                                key={index} 
+                                x1={size / 2}
+                                y1={yScaleDefense(measurement.ADJDE)}
+                                x2={size / 2 + 80}
+                                y2={yScaleDefense(measurement.ADJDE)}
+                                stroke={highlight ? "red" : "steelblue"}
+                                strokeOpacity={highlight ? 1 : 0.1}
+                            />
+                        );
+                    })}
+                </svg>
+
+                <svg width={size} height={size} style={{ border: "1px solid black" }}>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={size - margin + axisTextAlignmentFactor} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            75
+                    </text>
+                    <text 
+                        x={barcodeLength} 
+                        textAnchor="end"
+                        y={margin + axisTextAlignmentFactor / 2} 
+                        style={{ fontSize: 15, fontFamily: "Gill Sans, sans serif" }}>
+                            130
+                    </text>
+
+                    <line
+                        x1={size / 4 - tickLength} 
+                        y1={margin} 
+                        x2={size / 4 - tickLength * 2} 
+                        y2={margin}
+                        stroke={"black"}
+                        strokeWidth= {"3"}
+                    />
+
+                    <line
+                        x1={size / 4 - tickLength}
+                        y1={size - margin}
+                        x2={size / 4 - tickLength * 2}
+                        y2={size - margin}
+                        stroke={"black"} 
+                        strokeWidth= {"3"}
+                    />
+                    
+                    {data.map((measurement, index) => {
+                        const highlight = measurement.CONF === "ACC";
+                        console.log(yScaleDefense(measurement.ADJDE));
+                        return (
+                            <line
+                                key={index} 
+                                x1={size / 2}
+                                y1={yScaleDefense(measurement.ADJDE)}
+                                x2={size / 2 + 80}
+                                y2={yScaleDefense(measurement.ADJDE)}
+                                stroke={highlight ? "red" : "steelblue"}
+                                strokeOpacity={highlight ? 1 : 0.1}
+                            />
+                        );
+                    })}
+                </svg>
 
             </div>
            
