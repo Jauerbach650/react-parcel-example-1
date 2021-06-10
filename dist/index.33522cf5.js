@@ -22639,7 +22639,7 @@ const App = ()=>{
             lineNumber: 470
         },
         __self: undefined
-    }, "Write-up from Assignment 2"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "Write-up"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "/Users/jordan2/Desktop/Info_474/react-parcel-example-1/src/App.js",
             lineNumber: 471

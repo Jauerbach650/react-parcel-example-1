@@ -467,7 +467,7 @@ const App = () => {
            
 
             <div>
-                <h2>Write-up from Assignment 2</h2>
+                <h2>Write-up</h2>
                 <p>For this assignment, I came up with these 3 questions: <br></br>
                 Who has a higher Adjusted Offensive Efficiency between the Pac 12 and the SEC?<br></br>
                 Who has a higher Adjusted Defensive Efficiency between the Big 12 and the ACC?<br></br>
