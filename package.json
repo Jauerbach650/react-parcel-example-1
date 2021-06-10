@@ -2,7 +2,7 @@
   "name": "react-parcel-example1",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
+  "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --public-url https://jauerbach650.github.io/react-parcel-example-1/; rm -rf docs; mv dist docs;",
