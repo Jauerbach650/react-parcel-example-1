@@ -80,7 +80,6 @@ const App = () => {
                     
                     {data.map((d, index) => {
                         const highlight = d.CONF === "P12";
-                        console.log(yScale(d.ADJOE));
                         return (
                             <line
                                 key={index} 
@@ -131,7 +130,6 @@ const App = () => {
                     
                     {data.map((measurement, index) => {
                         const highlight = measurement.CONF === "SEC";
-                        console.log(yScale(measurement.ADJOE));
                         return (
                             <line
                                 key={index} 
@@ -190,7 +188,6 @@ const App = () => {
                     
                     {data.map((measurement, index) => {
                         const highlight = measurement.CONF === "B12";
-                        console.log(yScaleDefense(measurement.ADJDE));
                         return (
                             <line
                                 key={index} 
@@ -241,7 +238,6 @@ const App = () => {
                     
                     {data.map((measurement, index) => {
                         const highlight = measurement.CONF === "ACC";
-                        console.log(yScaleDefense(measurement.ADJDE));
                         return (
                             <line
                                 key={index} 
